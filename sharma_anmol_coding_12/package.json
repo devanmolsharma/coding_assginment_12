@@ -1,0 +1,19 @@
+{
+  "name": "custom-components",
+  "version": "1.0.0",
+  "description": "A custom component library for assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^18.2.54",
+    "react": "^18.2.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "styled-components": "^6.1.8"
+  }
+}
