@@ -14,6 +14,7 @@
     "typescript": "^5.3.3"
   },
   "dependencies": {
+    "storybook": "^7.6.13",
     "styled-components": "^6.1.8"
   }
 }
