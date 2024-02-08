@@ -1,16 +1,22 @@
-import React from "react";
-import styled from 'styled-components';
+import styled from "styled-components";
 import Props from "./Button.types";
 
-const Button = styled.button<Props>`
-padding:10px;
-margin:5px;
-background-color:${props => (props.disabled == true)?'grey':'blue'}
+const BaseButton = styled.button<Props>`
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 15px;
+  background-color: ${(props) =>
+    props.disabled == true ? "grey" : props.$backgroundColor ?? "blue"};
 
-&:hover{
-    cursor: ${props => (props.disabled == true)?'not-allowed':'pointer'};
+  &:hover {
+    ${(props) => !props.disabled && "filter: brightness(0.9);"}
+    cursor: ${(props) => (props.disabled == true ? "not-allowed" : "pointer")};
+  }
+`;
+
+export default function Button(props: Props) {
+  return <BaseButton {...props}>{props.label ?? "Button"}</BaseButton>;
 }
-
-`
-
-export default Button;

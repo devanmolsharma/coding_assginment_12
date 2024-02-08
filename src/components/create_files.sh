@@ -4,9 +4,9 @@ components=("Button" "Card" "Dropdown" "HeroImage" "Img" "Label" "RadioButton" "
 
 for component in "${components[@]}"
 do
-    touch "$component/$component.tsx"
-    touch "$component/$component.stories.tsx"
-    touch "$component/$component.types.tsx"
-    touch "$component/$component.tests.tsx"
-    touch "$component/index.ts"
+#    touch "$component/$component.tsx"
+    rm "$component/$component.stories.tsx"
+#    touch "$component/$component.types.tsx"
+#    touch "$component/$component.tests.tsx"
+#    touch "$component/index.ts"
 done

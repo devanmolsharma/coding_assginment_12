@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: "Marbella/InputField",
+  title: "MyComponents/Button",
   argTypes: {},
 };
 export default meta;
@@ -12,10 +12,11 @@ export default meta;
 type Story = StoryObj<typeof Button>;
 
 export const Primary: Story = (args) => (
-  <Button data-testId="InputField-id" {...args} />
+  <Button data-testId="Button-id" {...args} />
 );
 
 Primary.args = {
   disabled: false,
-  backgorindColor: "blue",
+  $backgroundColor: "blue",
+  label:'Button'
 };
