@@ -11,16 +11,16 @@ const CardBase = styled.div<Props>`
   max-height: 500px;
   max-width: 500px;
   opacity: ${(props) =>
-    props.disabled == true ? 0.7 : props.$backgroundColor??1};
+    props.disabled == true ? 0.7 : props.$backgroundColor ?? 1};
   background-color: ${(props) =>
-    props.disabled == true ? "grey" : props.$backgroundColor??"white"};
+    props.disabled == true ? "grey" : props.$backgroundColor ?? "white"};
   pointer-events: none;
 
-img{
+  img {
     object-fit: cover;
     width: 100%;
     max-height: 350px;
-}
+  }
   &:hover {
     ${(props) => !props.disabled && "filter: brightness(0.9);"}
     cursor: ${(props) => (props.disabled == true ? "not-allowed" : "pointer")};
@@ -30,9 +30,9 @@ img{
 export default function Card(props: Props) {
   return (
     <CardBase {...props}>
-      {props.imageUrl&&<img src={props.imageUrl} alt="Card-Image" />}
+      {props.imageUrl && <img src={props.imageUrl} alt="Card-Image" />}
       <h3>{props.title ?? "Title"}</h3>
-      <div>{props.content??"Content"}</div>
+      <div>{props.content ?? "Content"}</div>
     </CardBase>
   );
 }

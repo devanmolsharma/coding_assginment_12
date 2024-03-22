@@ -18,5 +18,5 @@ export const Primary: Story = (args) => (
 Primary.args = {
   disabled: false,
   $backgroundColor: "blue",
-  label:'Button'
+  label: "Button",
 };

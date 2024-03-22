@@ -17,7 +17,7 @@ export const Simple: Story = (args) => (
 
 Simple.args = {
   disabled: false,
-  default:'Option1',
-  $items:['Option1','Option2','Option3'],
-  $backgroundColor:'white'
+  default: "Option1",
+  $items: ["Option1", "Option2", "Option3"],
+  $backgroundColor: "white",
 };

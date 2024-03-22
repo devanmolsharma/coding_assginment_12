@@ -11,12 +11,10 @@ export default meta;
 
 type Story = StoryObj<typeof Img>;
 
-export const Simple: Story = (args) => (
-  <Img data-testId="Img-id" {...args} />
-);
+export const Simple: Story = (args) => <Img data-testId="Img-id" {...args} />;
 
 Simple.args = {
   disabled: false,
-  src:"https://picsum.photos/200/300",
-  alt:'This is the description'
+  src: "https://picsum.photos/200/300",
+  alt: "This is the description",
 };

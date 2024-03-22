@@ -1,4 +1,3 @@
-
 import styled from "styled-components";
 import Props from "./Table.types";
 
@@ -13,7 +12,7 @@ export const Table = styled.table<Props>`
   &:hover {
     cursor: ${(props) => (props.disabled == true ? "not-allowed" : "pointer")};
   }
-  *{
+  * {
     pointer-events: ${(props) => (props.disabled == true ? "none" : "all")};
   }
 `;
@@ -22,18 +21,18 @@ export const Table = styled.table<Props>`
 export const TableHeader = styled.thead`
   background-color: #f2f2f2;
   font-weight: bold;
-  `;
+`;
 
 // Table Row Component
 export const TableRow = styled.tr`
   &:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    
-    &:hover {
-        background-color: #e6e6e6;
-    }
-    `;
+    background-color: #f9f9f9;
+  }
+
+  &:hover {
+    background-color: #e6e6e6;
+  }
+`;
 // Table Cell Component
 export const TableCell = styled.td`
   padding: 12px;

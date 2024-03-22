@@ -11,12 +11,10 @@ export default meta;
 
 type Story = StoryObj<typeof Text>;
 
-export const Simple: Story = (args) => (
-  <Text data-testId="Text-id" {...args} />
-);
+export const Simple: Story = (args) => <Text data-testId="Text-id" {...args} />;
 
 Simple.args = {
   disabled: false,
-  $text:"Hola!",
-  $backgroundColor:'white'
+  $text: "Hola!",
+  $backgroundColor: "white",
 };

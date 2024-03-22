@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import './RadioButton.types';
+import "./RadioButton.types";
 // Styled radio button
 const RadioButton = styled.input<Props>`
   margin: 5px;
@@ -25,7 +25,7 @@ const RadioButtonLabel = styled.label`
 `;
 
 // Radio button component
-const Radio = (params:Props) => {
+const Radio = (params: Props) => {
   return (
     <RadioButtonWrapper>
       <RadioButton type="radio" {...params} />

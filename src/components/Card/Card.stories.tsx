@@ -11,13 +11,11 @@ export default meta;
 
 type Story = StoryObj<typeof Card>;
 
-export const Simple: Story = (args) => (
-  <Card data-testId="Card-id" {...args} />
-);
+export const Simple: Story = (args) => <Card data-testId="Card-id" {...args} />;
 
 Simple.args = {
   disabled: false,
-  title:'Card Title',
-  content:"test",
-  imageUrl:"https://picsum.photos/200/300"
+  title: "Card Title",
+  content: "test",
+  imageUrl: "https://picsum.photos/200/300",
 };

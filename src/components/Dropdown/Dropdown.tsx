@@ -11,9 +11,9 @@ const DropdownBase = styled.select<Props>`
   max-height: 500px;
   max-width: 500px;
   opacity: ${(props) =>
-    props.disabled == true ? 0.7 : props.$backgroundColor??1};
+    props.disabled == true ? 0.7 : props.$backgroundColor ?? 1};
   background-color: ${(props) =>
-    props.disabled == true ? "grey" : props.$backgroundColor??"white"};
+    props.disabled == true ? "grey" : props.$backgroundColor ?? "white"};
 
   &:hover {
     cursor: ${(props) => (props.disabled == true ? "not-allowed" : "pointer")};
@@ -23,7 +23,14 @@ const DropdownBase = styled.select<Props>`
 export default function Dropdown(props: Props) {
   return (
     <DropdownBase {...props} defaultValue={props.default}>
-     {props.$items?.map((item)=>(<option key={item} onClick={()=>props.$onChange && props.$onChange(item)}>{item}</option>))}
+      {props.$items?.map((item) => (
+        <option
+          key={item}
+          onClick={() => props.$onChange && props.$onChange(item)}
+        >
+          {item}
+        </option>
+      ))}
     </DropdownBase>
   );
 }

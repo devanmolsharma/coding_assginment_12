@@ -9,7 +9,6 @@ const BaseText = styled.div<Props>`
   background-color: ${(props) =>
     props.disabled == true ? "grey" : props.$backgroundColor ?? "white"};
 
-
   &:hover {
     cursor: ${(props) => (props.disabled == true ? "not-allowed" : "pointer")};
   }

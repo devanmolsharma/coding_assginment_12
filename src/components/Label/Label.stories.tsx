@@ -17,6 +17,6 @@ export const Simple: Story = (args) => (
 
 Simple.args = {
   disabled: false,
-  $text:"Hola!",
-  $backgroundColor:'white'
+  $text: "Hola!",
+  $backgroundColor: "white",
 };

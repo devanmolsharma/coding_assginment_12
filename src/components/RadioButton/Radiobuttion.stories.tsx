@@ -17,5 +17,5 @@ export const Simple: Story = (args) => (
 
 Simple.args = {
   disabled: false,
-  $label:"Hola!"
+  $label: "Hola!",
 };

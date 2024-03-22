@@ -17,6 +17,6 @@ export const Simple: Story = (args) => (
 
 Simple.args = {
   disabled: false,
-  src:"https://picsum.photos/500/200",
-  alt:'This is the description'
+  src: "https://picsum.photos/500/200",
+  alt: "This is the description",
 };

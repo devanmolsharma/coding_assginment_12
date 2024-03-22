@@ -12,9 +12,9 @@ export default meta;
 type Story = StoryObj<typeof Table>;
 
 const generateFakeData = (rows, columns) => {
-  const data:string[][] = [];
+  const data: string[][] = [];
   for (let i = 0; i < rows; i++) {
-    let rowData:string[] = [];
+    const rowData: string[] = [];
     for (let j = 0; j < columns; j++) {
       rowData.push(`Row ${i + 1}, Cell ${j + 1}`);
     }
